@@ -1,0 +1,139 @@
+/*Andreina Bolivar-Campbell, Web240, Stylesheet*/
+
+body {
+	font-family: trebuchet ms; /*Professional font that's dyslexia friendly*/
+	background: #1F1E1F; /*dark gray background to reduce eye strain*/
+}
+
+/*font stylings*/
+h2 {
+	color: #581FD1; /*pale purple*/
+	padding-top: 10px;
+}
+h3 {
+	color: #0672C9; /*pale blue*/
+	padding-top: 30px; /*create space between header & other sections*/
+}
+p {
+	color: #E0E0E0; /*very light gray text, reduces eye strain*/
+	font-size: 18px;
+	line-height: 1.6; /*increases space between text lines for readability*/
+}
+
+article {
+	display: block;
+}
+
+/*navigation styling*/
+nav ul {
+	display: flex;
+	gap: 100px; /*space between nav links*/
+	list-style: none; /*remove list bullets*/
+	padding: 10px 75px; /*top padding 10px right padding */
+	margin: 0;
+	background: #0E0E0E; 
+	border: 2px solid gray;
+	border-radius: 8px;
+}
+nav a {
+		text-decoration: none; 
+			color: #FF00FB; /*fuschia*/
+			font-weight: bold;
+			font-size: 20px; 
+}
+/*navigation changes color when cursor hovers over it*/
+nav a:hover {
+	color: #ff007b; /*mauve*/
+	text-decoration: underline;
+	padding: 5px 10px; 
+}
+
+/*video styling, videos should not cover entire page like in original site*/
+.video_section {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+.vidHead {
+	text-align: center;
+	padding-top: 20px; 
+}
+
+/*list styling*/
+.signs {
+	font-size: 18px; 
+	color: #E0E0E0; /*very light gray text, reduces eye strain*/
+}
+.numbers {
+	font-size: 18px; 
+	color: #E0E0E0; /*very light gray text, reduces eye strain*/
+	line-height: 1.6; /*increase space between lines for readability*/
+}
+
+.signs-header {
+	width: 200%;
+}
+/*Used following to allow image and list to be side by side horizontally*/
+/*.row is the container*/
+.row {
+	display: flex;
+	gap: 250px; /*space between text & img*/
+	align-items: flex-start;
+	margin-top: 10px;
+	padding: 10px; 
+	margin-left: 20px; 
+}
+.signs ul {
+	width: 100%;
+	line-height: 1.6; /*increased space between text lines for readability*/
+}
+
+.image1 img {
+	width: 70%;
+	height: auto;
+	border-radius: 8px;
+	margin-top: 5%;
+	}
+
+/*footer styling*/
+footer {
+	font-family: Times New Roman; 
+	color: #E0E0E0;
+	text-align: center;
+	padding-top: 50px;
+}
+img {
+	width: auto;
+	margin-top: 0;
+}
+/*h1 header styling*/
+.irlen-head {/*main container*/
+	position: relative;
+	width: 100%;
+	color: #3B158E; /*purple*/
+	text-align: center; 
+	font-style: italic;
+	text-shadow: -10px -10px 7px #000, /*darkens top-left edge with a blur radius of 7px & color black*/
+				 -10px -10px 7px #000, /*extra top edge*/
+				10px -10px 7px #000, /*darkens top-right edge*/
+				 -10px 10px 7px #000, /*darkens bottom left edge*/
+				10px 10px 7px #000, /*extra bottom edge*/
+				10px 10px 7px #000; /*darkens bottom right edge*/
+}
+/*image container*/
+.irlen-head img {
+	width: 100%;
+	height: 140px; /*adjusts image height*/
+	object-fit: cover; /*makes image cover the length of the page*/
+	object-position: center;/*centers image*/
+	
+}/*may need an alternative image*/
+.name {/*h1 container*/
+	position: absolute;
+	top: 20%; /*moves h1 to upper left and centers it*/
+	left: 13%;
+	transform: translate(-50%, -50%);
+	text-align: center; 
+	margin-top: 35px;
+	line-height: 0.5;
+}
